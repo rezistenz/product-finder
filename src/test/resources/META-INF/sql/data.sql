@@ -1,0 +1,35 @@
+-- init SEQUENCES table
+INSERT INTO SEQUENCES (NAME, VALUE) 
+	VALUES ('CAT', 1000);
+INSERT INTO SEQUENCES (NAME, VALUE) 
+	VALUES ('PROD', 1000);
+
+--init CAT table
+INSERT INTO CAT (ID, NAME) 
+	VALUES (1, 'electronic');
+INSERT INTO CAT (ID, NAME) 
+	VALUES (2, 'computers');
+INSERT INTO CAT (ID, NAME) 
+	VALUES (3, 'household appliances');
+INSERT INTO CAT (ID, NAME) 
+	VALUES (4, 'clothes');
+INSERT INTO CAT (ID, NAME) 
+	VALUES (5, 'sport');
+
+-- init PROD table
+-- CAT electronic
+INSERT INTO PROD (ID, NAME, PRICE, CAT_ID) 
+	VALUES(1, 'Apple iPhone 5S', 35990.00, 1);
+INSERT INTO PROD (ID, NAME, PRICE, CAT_ID)  
+	values(2, 'Samsung Galaxy A5', 17500.00, 1);
+INSERT INTO PROD (ID, NAME, PRICE, CAT_ID)  
+	values(3, 'Canon EOS 1200D Kit', 13500.00, 1);
+INSERT INTO PROD (ID, NAME, PRICE, CAT_ID)  
+	values(4, 'Nikon D5200 Kit', 29990.00, 1);
+-- CAT computers
+INSERT INTO PROD (ID, NAME, PRICE, CAT_ID)  
+	values(5, 'Lenovo B50 70', 32506.00, 2);
+INSERT INTO PROD (ID, NAME, PRICE, CAT_ID)  
+	values(6, 'ASUS X200MA', 25064.00, 2);
+INSERT INTO PROD (ID, NAME, PRICE, CAT_ID)  
+	values(7, 'HP PAVILION 15-p100', 36957.00, 2);
